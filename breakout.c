@@ -114,6 +114,16 @@ void handleInput() {
 }
 
 int main() {
+    printf("Welcome to Brick Breaker!\n\n");
+    printf("Instructions:\n");
+    printf("Use 'a' to move paddle left\n");
+    printf("Use 'd' to move paddle right\n");
+    printf("Press 'p' to pause/resume the game\n");
+    printf("Break all bricks to win the game!\n");
+    printf("Press any key to start...\n");
+    _getch(); // Waits for the player to press a key
+    system("cls"); // Clears screen before starting the game
+
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_CURSOR_INFO ci = {1,FALSE};
     SetConsoleCursorInfo(hConsole, &ci);
